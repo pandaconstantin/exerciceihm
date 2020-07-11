@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="306.0" prefWidth="600.0" text="Enregistrement d'un étudiant" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bf.esiupb.controleur.enregistrerControleur">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="68.0" layoutY="38.0" text="Matricule" />
+            <TextField fx:id="txtmatricule" layoutX="159.0" layoutY="33.0" prefHeight="27.0" prefWidth="391.0" style="-fx-background-color: #17a2b8#17a2b8;" />
+            <Label layoutX="68.0" layoutY="72.0" text="Nom" />
+            <TextField fx:id="txtnom" layoutX="159.0" layoutY="67.0" prefHeight="27.0" prefWidth="391.0" />
+            <Label layoutX="68.0" layoutY="106.0" text="Prénom" />
+            <TextField fx:id="txtprenom" layoutX="159.0" layoutY="101.0" prefHeight="27.0" prefWidth="391.0" />
+            <DatePicker fx:id="datenaissance" layoutX="159.0" layoutY="136.0" prefHeight="27.0" prefWidth="392.0" />
+            <Label layoutX="68.0" layoutY="141.0" text="Date naissance" />
+            <RadioButton fx:id="radiomasculin" layoutX="159.0" layoutY="177.0" mnemonicParsing="false" text="Masculin" />
+            <RadioButton fx:id="radiofeminin" layoutX="253.0" layoutY="177.0" mnemonicParsing="false" text="Féminin" />
+            <Label layoutX="69.0" layoutY="178.0" text="Sexe" />
+            <Button fx:id="boutonenregistrer" layoutX="262.0" layoutY="223.0" mnemonicParsing="false" onAction="#enregistrerEtudiant" prefHeight="27.0" prefWidth="140.0" text="Enregistrer" />
+            <Button fx:id="boutonannuler" layoutX="411.0" layoutY="223.0" mnemonicParsing="false" onAction="#annulerEnregistrement" prefHeight="27.0" prefWidth="140.0" text="Annuler" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
